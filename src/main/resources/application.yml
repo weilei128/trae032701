@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: personal-account-book
+  servlet:
+    multipart:
+      max-file-size: 10MB
+
+app:
+  csv:
+    data-dir: ./data
+    users-file: users.csv
+    records-file: records.csv
+
+logging:
+  level:
+    com.account: DEBUG
+    org.springframework: INFO
